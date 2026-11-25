@@ -1,0 +1,2 @@
+cd "C:\Users\arkik\OneDrive\Desktop\Major"
+powershell -ExecutionPolicy Bypass -File .\Start-CodeAtlas.ps1

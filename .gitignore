@@ -1,0 +1,16 @@
+.env
+Backend/.env
+Backend/.venv/
+Backend/__pycache__/
+Backend/**/__pycache__/
+Backend/.pytest_cache/
+Backend/*.db
+Backend/*.sqlite
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.codex-build-verify*/
+Backend/*.log
+Backend/*.stderr.log
+Backend/*.stdout.log
+output/
+tmp/

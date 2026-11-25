@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+  <title id="title">CodeAtlas AI CA globe mark</title>
+  <desc id="desc">A blue and cyan C and A monogram surrounding a simplified globe, on a transparent background.</desc>
+  <defs>
+    <linearGradient id="cGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#45f5e2"/><stop offset=".45" stop-color="#079cff"/><stop offset="1" stop-color="#0648f4"/></linearGradient>
+    <linearGradient id="aGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#56fff0"/><stop offset=".5" stop-color="#08c7ef"/><stop offset="1" stop-color="#0781f5"/></linearGradient>
+    <radialGradient id="ocean" cx="30%" cy="22%" r="85%"><stop offset="0" stop-color="#087acb"/><stop offset=".45" stop-color="#03408e"/><stop offset="1" stop-color="#06143f"/></radialGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38f1e5"/><stop offset="1" stop-color="#078aff"/></linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".5"/><stop offset=".4" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="8" flood-color="#001a72" flood-opacity=".55"/></filter>
+    <clipPath id="globeClip"><circle cx="337" cy="287" r="139"/></clipPath>
+  </defs>
+  <!-- Globe -->
+  <g filter="url(#shadow)">
+    <circle cx="337" cy="287" r="147" fill="#061b55" opacity=".95"/>
+    <circle cx="337" cy="287" r="139" fill="url(#ocean)" stroke="#087bd5" stroke-width="3"/>
+    <g clip-path="url(#globeClip)" fill="url(#land)">
+      <!-- simplified Americas, deliberately minimal -->
+      <path d="M264 181 L291 164 315 169 330 184 326 201 344 209 354 226 342 239 326 235 319 252 301 256 293 276 275 286 265 306 248 304 238 286 224 277 218 258 228 242 220 222 236 205 247 189Z"/>
+      <path d="M284 302 L306 296 326 307 339 323 335 342 350 358 345 379 332 400 323 424 310 445 300 432 297 407 287 386 284 365 269 348 270 328Z"/>
+      <!-- hint of Europe/Africa on the far side -->
+      <path d="M385 183 L408 172 429 184 437 203 425 217 431 234 416 247 402 235 390 218Z"/>
+      <path d="M405 250 L432 246 449 264 446 289 433 311 428 340 412 360 398 344 395 319 384 299 389 278Z"/>
+    </g>
+    <ellipse cx="337" cy="211" rx="121" ry="66" fill="url(#shine)" clip-path="url(#globeClip)"/>
+  </g>
+  <!-- C crescent / ring -->
+  <path d="M454 113 A224 224 0 1 0 458 453 L405 400 A153 153 0 1 1 403 168 Z" fill="url(#cGrad)" filter="url(#shadow)"/>
+  <path d="M454 113 A224 224 0 0 0 235 72" fill="none" stroke="#a7fff7" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+  <!-- A monogram, solid and arrow-free -->
+  <path d="M438 480 L584 119 Q590 105 599 119 L785 480 L701 480 L592 263 L505 480 Z" fill="url(#aGrad)" filter="url(#shadow)"/>
+  <path d="M438 480 L584 119 Q590 105 599 119 L785 480" fill="none" stroke="#a6fff8" stroke-width="3" stroke-linejoin="round" opacity=".58"/>
+  <path d="M543 390 L637 390 L660 433 L522 433 Z" fill="#062e91" opacity=".96"/>
+</svg>
